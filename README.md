@@ -28,19 +28,21 @@ must be installed:
 - `JRE` (Java Runtime Enviroment): it will be used to run the software.
 - A font patched by the [Nerd Fonts](https://www.nerdfonts.com/font-downloads)
   project: it provides the pretty symbols used in the game.
+- A terminal emulator with ANSI support: like *Git Bash* (for Windows) or
+  *Kitty* (for others operating systems).
 
 #### Procedures
 
 - Access its [latest release](https://github.com/skippyr/tic-tac-toe/releases/latest)
   page.
 - Under the *Assets* section, click on the `TicTacToe.jar` file to download it.
-- Access your downloads directory using a command-line utility.
+- Access your downloads directory using a terminal emulator with ANSI support.
 - Execute the `TicTacToe.jar` using `java` to start playing it.
 
 > [!IMPORTANT]
-> You must execute it from a command-line. As it does not have a GUI, opening it
-> by clicking on it when using a file explorer would just start it as a
-> background process that you would need to kill using a task manager to avoid
+> You must execute it from a terminal emulator. As it does not have a GUI,
+> opening it by clicking on it when using a file explorer would just start it as
+> a background process that you would need to kill using a task manager to avoid
 > wasting resources.
 
 ```bash
@@ -59,8 +61,12 @@ In order to build it, the following dependencies must be installed:
   source code.
 - A font patched by the [Nerd Fonts](https://www.nerdfonts.com/font-downloads)
   project: it provides the pretty symbols used in the game.
+- A terminal emulator with ANSI support: like *Git Bash* (for Windows) or
+  *Kitty* (for others operating systems).
 
 #### Procedures
+Using a terminal emulator with ANSI support, follow these steps:
+
 - Clone this repository using `git`.
 
 ```bash
