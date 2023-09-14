@@ -15,7 +15,7 @@ public class TicTacToe {
         while (true) {
             Terminal.clear();
             System.out.println(
-                Color.Grey.colorize("󰩈 Use Ctrl + C to end the game."));
+                Color.GREY.colorize("󰩈 Use Ctrl + C to end the game."));
             board.draw();
             if (board.isWon()) {
                 Terminal.printInfo(board.getLastPlayer().getColoredName() +

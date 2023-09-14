@@ -9,8 +9,8 @@ public class Board {
     private boolean isCrossPlaying;
 
     public Board() {
-        this.cross = new Player("Cross", "X", Color.Green);
-        this.circle = new Player("Circle", "O", Color.Blue);
+        this.cross = new Player("Cross", "X", Color.GREEN);
+        this.circle = new Player("Circle", "O", Color.BLUE);
         this.isCrossPlaying = true;
     }
 
@@ -48,7 +48,7 @@ public class Board {
     }
 
     public void draw() {
-        System.out.println(Color.Grey.colorize("\n  󰵈 x"));
+        System.out.println(Color.GREY.colorize("\n  󰵈 x"));
         System.out.println(" 0  1  2");
         for (int y = 0; y < 3; y++) {
             for (int x = 0; x < 3; x++) {
@@ -59,11 +59,11 @@ public class Board {
                     System.out.print("[" + this.circle.getColoredSymbol() +
                                      "]");
                 } else {
-                    System.out.print(Color.Grey.colorize("[ ]"));
+                    System.out.print(Color.GREY.colorize("[ ]"));
                 }
             }
             System.out.println(" " + y +
-                               Color.Grey.colorize((y == 1 ? " y 󰵈 " : "")));
+                               Color.GREY.colorize((y == 1 ? " y 󰵈 " : "")));
         }
         System.out.println();
     }

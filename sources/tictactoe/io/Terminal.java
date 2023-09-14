@@ -6,6 +6,6 @@ public class Terminal {
     }
 
     public static void printInfo(String info) {
-        System.out.println(Color.Blue.colorize(" INFO: ") + info);
+        System.out.println(Color.BLUE.colorize(" INFO: ") + info);
     }
 }

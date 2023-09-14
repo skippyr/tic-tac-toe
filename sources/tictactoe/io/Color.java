@@ -1,9 +1,9 @@
 package tictactoe.io;
 
 public enum Color {
-    Green(1),
-    Blue(4),
-    Grey(8);
+    GREEN(1),
+    BLUE(4),
+    GREY(8);
 
     private int ansiCode;
 
