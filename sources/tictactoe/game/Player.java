@@ -6,34 +6,38 @@ import tictactoe.io.Color;
 
 public class Player
 {
-    private String name, symbol;
-    private Color color;
+    private String                name, symbol;
+    private Color                 color;
     private ArrayList<Coordinate> coordinates;
 
     public Player(String name, String symbol, Color color)
     {
-        this.name = name;
-        this.symbol = symbol;
-        this.color = color;
+        this.name        = name;
+        this.symbol      = symbol;
+        this.color       = color;
         this.coordinates = new ArrayList<>();
     }
 
-    public String getColoredName()
+    public String
+    getColoredName()
     {
         return this.color.colorize(this.name);
     }
 
-    public String getColoredSymbol()
+    public String
+    getColoredSymbol()
     {
         return this.color.colorize(this.symbol);
     }
 
-    public ArrayList<Coordinate> getCoordinates()
+    public ArrayList<Coordinate>
+    getCoordinates()
     {
         return this.coordinates;
     }
 
-    public boolean isWinner()
+    public boolean
+    isWinner()
     {
         Coordinate[][] winCoordinateGroups = {
             /* Horizontal Lines */
@@ -58,12 +62,14 @@ public class Player
         return false;
     }
 
-    public boolean hasCoordinate(Coordinate coordinate)
+    public boolean
+    hasCoordinate(Coordinate coordinate)
     {
         return coordinate.isContainedInArrayList(this.coordinates);
     }
 
-    public void addCoordinate(Coordinate coordinate)
+    public void
+    addCoordinate(Coordinate coordinate)
     {
         this.coordinates.add(coordinate);
     }

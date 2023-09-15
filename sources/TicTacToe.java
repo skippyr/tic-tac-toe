@@ -9,11 +9,12 @@ import tictactoe.io.Terminal;
 
 public class TicTacToe
 {
-    public static void main(String[] _arguments)
+    public static void
+    main(String[] _arguments)
     {
-        Board board = new Board();
+        Board   board   = new Board();
         Scanner scanner = new Scanner(System.in);
-        String info = "";
+        String  info    = "";
         while (true)
         {
             Terminal.clear();

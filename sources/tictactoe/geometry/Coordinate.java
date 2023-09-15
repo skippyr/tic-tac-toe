@@ -14,22 +14,26 @@ public class Coordinate
         this.y = y;
     }
 
-    public int getX()
+    public int
+    getX()
     {
         return this.x;
     }
 
-    public int getY()
+    public int
+    getY()
     {
         return this.y;
     }
 
-    public boolean isEqualTo(Coordinate coordinate)
+    public boolean
+    isEqualTo(Coordinate coordinate)
     {
         return this.x == coordinate.getX() && this.y == coordinate.getY();
     }
 
-    public boolean isContainedInArrayList(ArrayList<Coordinate> coordinates)
+    public boolean
+    isContainedInArrayList(ArrayList<Coordinate> coordinates)
     {
         for (Coordinate coordinate : coordinates)
         {
@@ -41,8 +45,9 @@ public class Coordinate
         return false;
     }
 
-    public static boolean isGroupContainedInArrayList(
-        Coordinate[] coordinateGroup, ArrayList<Coordinate> coordinates)
+    public static boolean
+    isGroupContainedInArrayList(Coordinate[]          coordinateGroup,
+                                ArrayList<Coordinate> coordinates)
     {
         for (Coordinate coordinate : coordinateGroup)
         {
@@ -54,7 +59,8 @@ public class Coordinate
         return true;
     }
 
-    private static int parseStringToAxisValue(String string, String axis)
+    private static int
+    parseStringToAxisValue(String string, String axis)
         throws OutOfRangeAxisValueException
     {
         int axisValue;
@@ -76,7 +82,8 @@ public class Coordinate
         return axisValue;
     }
 
-    public static Coordinate fromString(String string)
+    public static Coordinate
+    fromString(String string)
         throws InvalidNumberOfAxisValuesException, OutOfRangeAxisValueException
     {
         String[] stringSplits = string.split(",");
@@ -98,7 +105,8 @@ public class Coordinate
         return new Coordinate(x, y);
     }
 
-    public String toString()
+    public String
+    toString()
     {
         return "(x: " + this.x + ", y: " + this.y + ")";
     }
