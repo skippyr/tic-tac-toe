@@ -13,8 +13,7 @@ public enum Color
         this.ansiCode = ansiCode;
     }
 
-    public String
-    colorize(String string)
+    public String colorize(String string)
     {
         return "\033[38;5;" + this.ansiCode + "m" + string + "\033[0m";
     }

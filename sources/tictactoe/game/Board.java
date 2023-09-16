@@ -16,34 +16,29 @@ public class Board
         this.isCrossPlaying = true;
     }
 
-    public Player
-    getLastPlayer()
+    public Player getLastPlayer()
     {
         return isCrossPlaying ? this.circle : this.cross;
     }
 
-    public Player
-    getCurrentPlayer()
+    public Player getCurrentPlayer()
     {
         return isCrossPlaying ? this.cross : this.circle;
     }
 
-    public boolean
-    isWon()
+    public boolean isWon()
     {
         return this.cross.isWinner() || this.circle.isWinner();
     }
 
-    public boolean
-    isDraw()
+    public boolean isDraw()
     {
         return this.cross.getCoordinates().size() +
             this.circle.getCoordinates().size() ==
             9;
     }
 
-    public void
-    addCoordinate(Coordinate coordinate)
+    public void addCoordinate(Coordinate coordinate)
         throws AlreadySelectedCoordinateException
     {
         if (this.cross.hasCoordinate(coordinate) ||
@@ -63,8 +58,7 @@ public class Board
         this.isCrossPlaying = !this.isCrossPlaying;
     }
 
-    public void
-    draw()
+    public void draw()
     {
         System.out.println(Color.GREY.colorize("\n  󰵈 x"));
         System.out.println(" 0  1  2");
